@@ -1,0 +1,72 @@
+* {
+    padding: 5px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    background-color: #5f9ea0;
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+}
+#logo {
+    margin-left: 0;
+    margin-right: -3%;
+}
+body {
+    background-color: mintcream ;
+}
+h1 {
+    color: darkslategrey;
+    margin-left: 2.7%;
+    margin-top: 2%;
+    
+}
+h2 {
+  color: white;
+  margin-top: 1%; 
+}
+.required:after {
+    content:" *"; 
+    color: red;
+}
+
+.formulario {
+    display: inline-table;
+    justify-content: left;
+    width: 45%;
+    margin-left: 2%;
+    font-size: 15px;
+}
+.primeiraParte {
+    border-bottom: 15px ridge #5f9ea0;
+}
+button {
+    width: 8%;
+    height: 50px;
+    padding: 5px 10px;
+    background-color: #92cacc;
+    color: darkslategray;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 300ms ease-out;
+    cursor: pointer;
+    border-radius: 10px 10px 10px 10px;
+    margin-left: 934px;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: dodgerblue;
+    color: whitesmoke;
+}
+footer {
+    font-size: 13px;
+    text-align: center;
+}
+#linkedin {
+    text-decoration: none;
+    color:cadetblue;
+    font-weight: 900;
+    font-size: 15px;
+}

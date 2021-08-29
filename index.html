@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js" type="text/javascript" defer></script>
+    
+    
+
+    <title>Formulário de cadastro - Banco de talentos</title>
+</head>
+<body>
+  <header>    
+    <img id="logo" src="JNlogo.jpg" width="5%">  
+    
+    <h2>Formulário de cadastro - Banco de talentos</h2>
+  </header>
+
+  <h1>Dados Pessoais</h1>
+
+  <div class="container">
+        
+    <form name="formulario" id="container" onchange="Formulario()">
+       
+      <div class="formulario">
+        <label class="nomeCompleto required" for="nomeCompleto">Nome Completo:</label><br>
+          <input type="text"  id="nomeCompleto" name="nomeCompleto" required size="45"><br>
+      </div>
+      <div class="formulario">
+        <label for="cargoPretendido">Cargo Pretendido:</label><br>
+          <input type="text" id="cargoPretendido" name="cargoPretendido"  size="30"><br>
+      </div>
+        
+      <div class="formulario">  
+          <label class="nascimento required" for="nascimento">Data de Nascimento:</label><br> 
+          <input type="date" id="nascimento" name="nascimento" size="60"><br>
+      </div>
+      
+      <div class="formulario">    
+        <label for="estadoCivil"> Estado Civil:</label><br>
+          <form method="post" name="estadoCivil">
+            <select id="estadoCivil">
+            <option value="blank"> </option>
+            <option value="solteiro">Solteiro(a)</option>
+            <option value="casado">Casado(a)</option>
+            <option value="divorciado">Divorciado(a)</option>
+            <option value="viuvo">Viúvo(a)</option>
+            </select>
+      </div>
+      
+
+
+      <div class="formulario">  
+        <label for="sexo">Sexo:</label><br>
+          <form method="post" name="sexo">
+            <select id="sexo">
+            <option value="blank"> </option>
+            <option value="feminino">Feminino</option>
+            <option value="masculino">Masculino</option>
+            <option value="naobi">Não-Binário</option>
+            <option value="naoDeclarar">Não Declarar</option>
+            </select><br>
+      </div>          
+      
+      <div class="formulario">
+        <label class="profissao required" for="profissao">Profissão:</label><br>
+          <input type="text" id="profissao" name="profissao" size="30"><br>
+      </div>
+
+      <div class="formulario">
+        <label class="cep required" for="cep">CEP:</label><br>
+          <input type="text" id="cep" name="cep" placeholder="Somente números" size="30" maxlength="8"><br>
+      </div>
+            
+      <div class="formulario">
+        <label class="endereco required" for="endereco">Endereço:</label><br>
+          <input type="text" id="endereco" name="endereco" size="40"><br>
+      </div>
+      
+      <div class="formulario">
+          <label class="bairro required" for="bairro">Bairro:</label><br>
+          <input type="text" id="bairro" name="bairro" size="20"><br>
+      </div>    
+      
+      <div class="formulario">
+        <label class="cidade required" for="cidade">Cidade:</label><br>
+          <input type="text" id="cidade" name="cidade" size="20"><br>
+      </div>
+
+      <div class="formulario">
+        <label class="estado required" for="estado">Estado:</label><br>
+          <input type="text" id="estado" name="estado" size="1" ><br>
+      </div>
+         
+      <div class="formulario">
+          <label for="tel">Telefone Fixo:</label><br>
+          <input type="text" id="tel" name="tel" placeholder="(XX)XXXX-XXXX" size="30"><br> 
+      </div>
+      
+      <div class="formulario">
+          <label class="celular required" for="celular">Celular:</label><br>
+          <input type="text" id="celular" name="celular" placeholder="(XX)XXXXX-XXXX" size="30"><br>
+      </div>
+
+      <div class="formulario">           
+        <label class="email required" for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" size="30"><br>
+      </div>    
+        
+    </div>
+    <div class="primeiraParte"></div>
+    
+    <h1>Documentos</h1>
+    
+    <div class="form">
+    
+
+          
+      <div class="formulario">   
+        <label class="identidade" for="identidade">Identidade:</label><br>
+        <input type="text" id="identidade" name="identidade" placeholder="Somente números" size="30"><br>
+      </div>
+      
+      <div class="formulario">   
+        <label class="cpf_digitado required" for="cpf_digitado">CPF:</label><br>
+        <input type="text" id="cpf_digitado" name="cpf_digitado" placeholder="Somente números" size="30" maxlength="11">
+      </div>
+          
+      <div class="formulario"> 
+        <label for="possuiVeiculo"> Possui veículo?</label><br>
+          <form method="post" name="possuiVeiculo">
+          <select id="possuiVeiculo">
+            <option value="blank"> </option>
+            <option value="sim"> Sim </option>
+            <option value="nao"> Não </option></select><br>
+      </div>
+
+
+      <div class="formulario"> 
+        <label for="habilitacao">Habilitação:</label><br>
+          <form method="post" name="habilitacao">
+          <select id="habilitacao">
+            <option value="blank"></option>
+            <option value="habA">A</option>
+            <option value="habAB">AB</option>
+            <option value="habB">B</option>
+            <option value="habC">C</option>
+            <option value="habD">D</option>
+            <option value="habE">E</option>
+            <option value="naoHab">Não sou habilitado(a)</option>
+           </select></form><br>
+      </div>
+      </div>  
+      <br><br>
+      <button id="enviar" type="submit" onclick="(validar(), criarCandidato())"> ENVIAR </button>
+      <div class="formulario"> 
+        <div id="success" class="alert alert-success" style="display: none;" role="alert">
+        </div>
+
+        <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+            
+        </div>
+    </div>
+      </div>  
+    </div>
+  
+  </form>
+  </body>
+
+  <footer>
+    <br><br>
+    <p>Desenvolvido por <a href="https://www.linkedin.com/in/diana-salmazo/" id="linkedin"> Diana Salmazo </a> para 
+        Start Tech da Gama Academy. Todos os direitos reservados. </p>
+</footer>
+</html>
+
+
+    
