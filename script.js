@@ -195,7 +195,7 @@ const Formulario = () => {
 
 
 const criarCandidato = async(Candidate) => {
-  const requisicao = await fetch('https://jobsnet--backend.herokuapp.com/register', {
+  const requisicao = fetch('https://jobsnet--backend.herokuapp.com/register', {
       method: "POST",
       headers: {
           'Accept': 'application/json',
@@ -206,7 +206,7 @@ const criarCandidato = async(Candidate) => {
   if(requisicao.status === 200) {
       alert('Cadastro concluído!');
   }
-  else if (requisicao.status === 503){
+  else if (requisicao.status === 500){
       alert('Dados já cadastrados..');
   }
   else {
