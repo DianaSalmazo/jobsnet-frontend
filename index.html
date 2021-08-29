@@ -23,7 +23,7 @@
 
   <div class="container">
         
-    <form name="formulario" id="container" onchange="Formulario()">
+    <form method="POST" name="formulario" id="container" onchange="Formulario()">
        
       <div class="formulario">
         <label class="nomeCompleto required" for="nomeCompleto">Nome Completo:</label><br>
@@ -155,7 +155,9 @@
       </div>
       </div>  
       <br><br>
-      <button id="enviar" type="submit" onclick="(validar(), criarCandidato())"> ENVIAR </button>
+      <button id="enviar" type="submit" onclick="(validar(), criarCandidato()); return false"> ENVIAR </button>
+      
+      
       <div class="formulario"> 
         <div id="success" class="alert alert-success" style="display: none;" role="alert">
         </div>

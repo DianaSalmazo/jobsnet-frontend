@@ -206,10 +206,11 @@ const criarCandidato = async(Candidate) => {
   if(requisicao.status === 200) {
       alert('Cadastro concluído!');
   }
-  else if (requisicao.status === 500){
+  else if (requisicao.status === 503){
       alert('Dados já cadastrados..');
   }
   else {
        alert('Seu cadastro não foi realizado');
    }
+   location.reload();
 }
