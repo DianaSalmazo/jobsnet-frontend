@@ -195,7 +195,7 @@ const Formulario = () => {
 
 
 const criarCandidato = async(Candidate) => {
-  const requisicao = fetch('https://jobsnet--backend.herokuapp.com/register', {
+  const requisicao = await fetch('https://jobsnet--backend.herokuapp.com/register', {
       method: "POST",
       headers: {
           'Accept': 'application/json',
